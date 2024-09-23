@@ -45,4 +45,10 @@ return Inertia::render('Video' , ['user'=>Auth::user()]);
 Route::get('/liveVideo' , function () {
 return Inertia::render('VideoCall' ); 
 });
+
+Route::get('/neoVideo' , function () {
+return Inertia::render('NeoVideo' , ['user'=>Auth::user()]); 
+});
+
+
 require __DIR__.'/auth.php';
